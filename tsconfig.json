@@ -1,0 +1,33 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["src/**/__tests__/**/*", "src/default-*-entry.ts"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "sourceMap": false,
+    "composite": true,
+    "incremental": true,
+    "stripInternal": true,
+    "noUnusedLocals": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "noUnusedParameters": true,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": false,
+    "noImplicitOverride": true,
+    "emitDeclarationOnly": true,
+    "allowUnreachableCode": false,
+    "importsNotUsedAsValues": "error",
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}

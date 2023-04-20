@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/mpeg/marko-run-adapter-cloudflare-pages.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "author": "Marcos Perona <mperona@gmail.com>",
   "keywords": [
     "marko"

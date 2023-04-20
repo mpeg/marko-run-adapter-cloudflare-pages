@@ -1,6 +1,6 @@
 {
   "name": "@mpeg/marko-run-adapter-cloudflare-pages",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Build and deploy @marko/run apps to Cloudflare Pages",
   "license": "MIT",
   "homepage": "https://github.com/mpeg/marko-run-adapter-cloudflare-pages",

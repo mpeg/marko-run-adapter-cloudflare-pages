@@ -36,8 +36,7 @@
   "types": "./dist/index.d.ts",
   "main": "./src/index.ts",
   "files": [
-    "*",
-    "**/*"
+    "dist/*"
   ],
   "peerDependencies": {
     "@marko/run": "^0.1.5"

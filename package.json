@@ -1,54 +1,58 @@
 {
-  "name": "@mpeg/marko-run-adapter-cloudflare-pages",
-  "version": "0.1.4",
-  "description": "Build and deploy @marko/run apps to Cloudflare Pages",
-  "license": "MIT",
-  "homepage": "https://github.com/mpeg/marko-run-adapter-cloudflare-pages",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mpeg/marko-run-adapter-cloudflare-pages.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "author": "Marcos Perona <mperona@gmail.com>",
-  "keywords": [
-    "marko"
-  ],
-  "type": "module",
-  "scripts": {
-    "build": "tsc -b && tsx scripts/build.ts"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+    "name": "@mpeg/marko-run-adapter-cloudflare-pages",
+    "version": "0.2.0",
+    "description": "Build and deploy @marko/run apps to Cloudflare Pages",
+    "license": "MIT",
+    "homepage": "https://github.com/mpeg/marko-run-adapter-cloudflare-pages",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mpeg/marko-run-adapter-cloudflare-pages.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "author": "Marcos Perona <mperona@gmail.com>",
+    "keywords": [
+        "marko"
+    ],
+    "type": "module",
+    "scripts": {
+        "build": "tsc -b && tsx scripts/build.ts"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "*": [
+                "./dist/index.d.ts"
+            ]
+        }
+    },
+    "types": "./dist/index.d.ts",
+    "main": "./src/index.ts",
+    "files": [
+        "dist/*"
+    ],
+    "peerDependencies": {
+        "@marko/run": "^0.1.12",
+        "wrangler": "^3.0.0"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20230404.0",
+        "@types/node": "^18.7.6",
+        "cross-env": "^7.0.3",
+        "esbuild": "^0.15.7",
+        "prettier": "^2.7.1",
+        "tsx": "^3.9.0",
+        "typescript": "^4.7.4",
+        "vite": "^4.1.4"
+    },
+    "dependencies": {
+        "chokidar": "^3.5.3"
     }
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "types": "./dist/index.d.ts",
-  "main": "./src/index.ts",
-  "files": [
-    "dist/*"
-  ],
-  "peerDependencies": {
-    "@marko/run": "^0.1.5"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230404.0",
-    "@types/node": "^18.7.6",
-    "cross-env": "^7.0.3",
-    "esbuild": "^0.15.7",
-    "prettier": "^2.7.1",
-    "tsx": "^3.9.0",
-    "typescript": "^4.7.4",
-    "vite": "^4.1.4"
-  }
 }

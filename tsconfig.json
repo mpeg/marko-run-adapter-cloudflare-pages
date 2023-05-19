@@ -1,6 +1,6 @@
 {
   "include": ["src/**/*"],
-  "exclude": ["src/**/__tests__/**/*", "src/default-*-entry.ts"],
+  "exclude": ["src/default-edge-entry.ts"],
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
@@ -24,10 +24,10 @@
     "noImplicitOverride": true,
     "emitDeclarationOnly": true,
     "allowUnreachableCode": false,
-    "importsNotUsedAsValues": "error",
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node"]
   }
 }

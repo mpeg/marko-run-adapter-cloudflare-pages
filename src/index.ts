@@ -50,14 +50,14 @@ export default function cfPagesAdapter(): Adapter {
             return path.join(__dirname, 'default-edge-entry')
         },
 
-        async startDev(entry, config, options) {
+        async startDev(_, config, options) {
             await build(config)
             await watch(['./src'], build, config)
-            return await wrangler(['pages', 'dev'], options.port, ...options.args)
+            return await wrangler(['pages', 'dev'], options.port || 3000, ...options.args)
         },
 
-        async startPreview(entry, options) {
-            return await wrangler(['pages', 'dev'], options.port, ...options.args)
+        async startPreview(_, options) {
+            return await wrangler(['pages', 'dev'], options.port || 3000, ...options.args)
         },
 
         async buildEnd(_, _routes, builtEntries) {

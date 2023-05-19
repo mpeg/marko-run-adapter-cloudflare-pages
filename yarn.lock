@@ -231,8 +231,8 @@ __metadata:
     typescript: ^4.7.4
     vite: ^4.1.4
   peerDependencies:
-    "@marko/run": ^0.1.5
-    wrangler: "*"
+    "@marko/run": ^0.1.12
+    wrangler: ^3.0.0
   languageName: unknown
   linkType: soft
 

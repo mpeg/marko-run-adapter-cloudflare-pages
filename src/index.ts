@@ -58,7 +58,7 @@ export default function cfPagesAdapter(): Adapter {
 
         async startPreview(entry, options) {
             return await wrangler(['pages', 'dev'], options.port, ...options.args)
-        }
+        },
 
         async buildEnd(_, _routes, builtEntries) {
             const entry = builtEntries[0]
